@@ -1,0 +1,75 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.navbar{
+  background-color: #0984c0;
+  height: 80px;
+  width:100%;
+  /* border-radius: 12px; */
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.navbar h1{
+  color: white;
+}
+
+/* Cambiar el color de fondo de los enlaces al pasar el mouse */
+.navbar h1:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Carrusel */
+.titulo{
+  text-align: center;
+}
+.carrusel-container {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:  1rem; /* Espacio entre tarjetas */
+}
+
+.carrusel-item {
+  background: #f9f9f9; /* Color de fondo de la tarjeta */
+  border:  1px solid #e0e0e0; /* Borde de la tarjeta */
+  border-radius:  4px; /* Bordes redondeados */
+  padding:  1rem; /* Espacio interno de la tarjeta */
+  width:  300px; /* Ancho de la tarjeta */
+  box-shadow:  0  2px  5px rgba(0,  0,  0,  0.15); /* Sombra de la tarjeta */
+  text-align: center; /* Alineación del texto */
+}
+
+/* Estilos para los botones de control del carrusel */
+.carrusel-control {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding:  10px;
+  cursor: pointer;
+  margin:  10px; /* Espacio alrededor de los botones */
+}
+
+
+/* Estilos responsivos para tarjetas */
+@media (max-width:  600px) {
+  .carrusel-item {
+    flex:  0  0  50%; /* Ajusta para que se muestren dos tarjetas en pantallas pequeñas */
+  }
+}
