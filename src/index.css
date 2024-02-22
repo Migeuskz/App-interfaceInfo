@@ -14,14 +14,6 @@ body{
   padding: 0;
 }
 
-.vermas{
-  background-color: #0984c0;
-  border-radius: 12px;
-  width: 85px;
-  height: 30px;
-  color: white;
-  text-decoration: none;
-}
 
 .navbar{
   background-color: #0984c0;
@@ -101,16 +93,23 @@ body{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 3px;
-  background: crimson;
+  background: #edfefd;
+}
+
+.left, .center, .right, .down{
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
 }
 
 :where(.left, .center, .right, .down) {
-  background: navajowhite;
+  background: #196771;
   transition: 300ms;
 }
 
 :where(.left, .center, .right, .down):hover {
-  background: crimson;
+  background: #13818b;
+  font-size: 180px;
 }
 
 #grid:has(.left:hover) {
@@ -139,4 +138,25 @@ body{
   #grid {
     grid-template-columns:  1fr; /* Ajusta el grid a una sola columna en pantallas muy pequeñas */
   }
+}
+
+/* piezas y divs */
+.vermas{
+  background-color: #0984c0;
+  border-radius: 12px;
+  width: 85px;
+  height: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+.contenido{
+  text-align: center;
+  color: #ddd;
+  font-size: 20px;
+  margin: 50px;
+}
+
+.titulos{
+  text-align: center;
 }
