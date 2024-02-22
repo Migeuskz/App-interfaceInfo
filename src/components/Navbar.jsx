@@ -8,13 +8,13 @@ export default function Navbar() {
             <Link to={'/'}>
                 <h1 class="animate__animated animate__bounceIn">Home</h1>
             </Link>
-            <Link to={'/Unidad/unidad1'}>
+            <Link to={'/Unidad1'}>
                 <h1 class="animate__animated animate__bounceIn">Unidad 1</h1>
             </Link>
-            <Link to={'/Unidad/unidad2'}>
+            <Link to={'/Unidad2'}>
                 <h1 class="animate__animated animate__bounceIn">Unidad 2</h1>
             </Link>
-            <Link to={'/Unidad/unidad3'}>
+            <Link to={'/Unidad3'}>
                 <h1 class="animate__animated animate__bounceIn">Unidad 3</h1>
             </Link>
             {/* animate__bounceIn */}

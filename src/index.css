@@ -14,6 +14,15 @@ body{
   padding: 0;
 }
 
+.vermas{
+  background-color: #0984c0;
+  border-radius: 12px;
+  width: 85px;
+  height: 30px;
+  color: white;
+  text-decoration: none;
+}
+
 .navbar{
   background-color: #0984c0;
   height: 80px;
@@ -26,12 +35,22 @@ body{
 
 .navbar h1{
   color: white;
+  text-decoration: none;
 }
 
 /* Cambiar el color de fondo de los enlaces al pasar el mouse */
 .navbar h1:hover {
   background-color: #ddd;
   color: black;
+  text-decoration: none;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width:  768px) {
+  .navbar {
+    flex-direction: column; /* Cambia la dirección del flex a columna en pantallas pequeñas */
+    height: auto; /* Ajusta la altura para que se ajuste al contenido */
+  }
 }
 
 /* Carrusel */
@@ -71,5 +90,53 @@ body{
 @media (max-width:  600px) {
   .carrusel-item {
     flex:  0  0  50%; /* Ajusta para que se muestren dos tarjetas en pantallas pequeñas */
+  }
+}
+
+
+/* paneles ackoff */
+#grid {
+  height: 100vh;
+  transition: 500ms;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 3px;
+  background: crimson;
+}
+
+:where(.left, .center, .right, .down) {
+  background: navajowhite;
+  transition: 300ms;
+}
+
+:where(.left, .center, .right, .down):hover {
+  background: crimson;
+}
+
+#grid:has(.left:hover) {
+  grid-template-columns: 2fr 0.5fr 0.5fr 0.5fr;
+}
+
+#grid:has(.center:hover) {
+  grid-template-columns: 0.5fr 2fr 0.5fr 0.5fr;
+}
+#grid:has(.right:hover) {
+  grid-template-columns: 0.5fr 0.5fr 2fr 0.5fr;
+}
+
+#grid:has(.down:hover) {
+  grid-template-columns: 0.5fr  0.5fr 0.5fr 2fr;
+}
+
+/* Estilos responsivos */
+@media (max-width:  768px) {
+  #grid {
+    grid-template-columns:  1fr  1fr; /* Ajusta el grid a  2 columnas en pantallas pequeñas */
+  }
+}
+
+@media (max-width:  480px) {
+  #grid {
+    grid-template-columns:  1fr; /* Ajusta el grid a una sola columna en pantallas muy pequeñas */
   }
 }
