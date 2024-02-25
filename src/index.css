@@ -55,6 +55,7 @@ body{
   justify-content: center;
   align-items: center;
   gap:  1rem; /* Espacio entre tarjetas */
+  
 }
 
 .carrusel-item {
@@ -65,6 +66,7 @@ body{
   width:  300px; /* Ancho de la tarjeta */
   box-shadow:  0  2px  5px rgba(0,  0,  0,  0.15); /* Sombra de la tarjeta */
   text-align: center; /* Alineación del texto */
+  
 }
 
 /* Estilos para los botones de control del carrusel */
@@ -102,8 +104,42 @@ body{
   /* align-items: center; */
 }
 
-:where(.left, .center, .right, .down) {
-  background: #196771;
+:where(.down) {
+  /* background: #196771; */
+  background-image: url('/src/assets/todo.jpg');
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size: cover;
+  transition: 300ms;
+  /* color: transparent; */
+}
+
+:where(.right) {
+  /* background: #196771; */
+  background-image: url('/src/assets/futuro.jpg');
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size: cover;
+  transition: 300ms;
+  /* color: transparent; */
+}
+
+:where(.center) {
+  /* background: #196771; */
+  background-image: url('/src/assets/presente.jpg');
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size: cover;
+  transition: 300ms;
+  /* color: transparent; */
+}
+
+
+:where(.left) {
+  background-image: url('/src/assets/pasado.jpg');
+  background-repeat:no-repeat;
+  background-position:right;
+  background-size: cover;
   transition: 300ms;
 }
 
@@ -159,4 +195,29 @@ body{
 
 .titulos{
   text-align: center;
+}
+
+.perfil{
+  text-align: center;
+  margin: 50px;
+}
+
+.perfil img{
+  width: 300px;
+  border-radius: 50%;
+}
+
+.perfil p{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+footer{
+  background-color: #0984c0;
+  width: 100%;
+  height: 80px;
+  color: #fff;
+  font-size: 30px;
+  text-align: center; 
+  font-weight: bold;
 }

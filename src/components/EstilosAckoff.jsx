@@ -15,6 +15,7 @@ export default function EstilosAckoff() {
                         través de la historia se han resistido al progreso y han buscado el retorno a la “vida simple”.
 
                     </p>
+                    {/* <img src="/src/assets/pasado.jpg" alt="algo" /> */}
                 </div>
 
             </div> {/* one*/}
@@ -28,6 +29,7 @@ export default function EstilosAckoff() {
                         cambio. Sus objetivos son la sobrevivencia y la estabilidad. Atrapados en la marea del cambio, tratan
                         de anclarse y mantenerse en una posición fija
                     </p>
+                    {/* <img src="/src/assets/presente.jpg" alt="algo" /> */}
                 </div>
             </div> {/* two */}
 
@@ -41,6 +43,7 @@ export default function EstilosAckoff() {
                         marea, para desembarcar en algún lugar en donde nadie haya llegado antes; una vez en este lugar, tratarán
                         de reclamar su derecho de propiedad y de cobrar peaje a los que llegan después.
                     </p>
+                    {/* <img src="/src/assets/futuro.jpg" alt="algo" /> */}
                 </div>
             </div> {/* three*/}
 
@@ -54,6 +57,7 @@ export default function EstilosAckoff() {
                         controlarse hasta cierto punto es el propio futuro. Creen que el futuro puede ser influenciado por lo que uno
                         hace y por lo que los demás hacen, del mismo
                     </p>
+                    {/* <img src="/src/assets/todo.jpg" alt="algo" /> */}
                 </div>
             </div>
         </div>

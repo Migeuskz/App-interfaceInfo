@@ -6,7 +6,7 @@ import { useState } from 'react';
 export default function CarruselTemas1() {
   const [indiceActual, setIndiceActual] = useState(0);
   const tarjetas = [
-    { titulo: 'Planeación Estrategica', contenido: 'Plan: “modelo sistemático de una actuación pública o privada, que se elabora anticipadamente para dirigirla y encauzarla”.' },
+    { titulo: 'Planeación Estrategica', contenido: 'Plan: “modelo sistemático de una actuación pública o privada, que se elabora anticipadamente para dirigirla y encauzarla”.', ruta: <Link to={'Unidad1/Tema1'}>ver mas</Link> },
     { titulo: 'Estilos de Planificación Ackoff', contenido: 'Según Ackoff, el proceso de la planeación en las organizaciones se orienta por las actitudes que los administradores tengan hacia la formulación de la planeación. ', ruta: <Link to={'Unidad1/Tema2'}>ver mas</Link> },
     { titulo: 'Modelos Organizacionales', contenido: 'También llamados estructuras organizacionales, se refieren a la forma en que una empresa, área o departamento, deben estar alineados con objetivos en común.' },
     // Agrega más objetos de tarjetas según sea necesario

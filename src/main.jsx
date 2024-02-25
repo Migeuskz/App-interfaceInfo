@@ -23,7 +23,7 @@ const router = createBrowserRouter([
     element: <Unidad1/> ,
     children: [
       {
-        path: '/Unidad1/Tema1',
+        path: 'Unidad1/Tema1',
         element: <h1>Unidad 1</h1>
       },
       {
