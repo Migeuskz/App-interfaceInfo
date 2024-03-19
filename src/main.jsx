@@ -39,6 +39,12 @@ const router = createBrowserRouter([
   {
     path: '/Unidad2',
     element: <Unidad2/>,
+    children:[
+      {
+        path: 'Unidad2/Tema1',
+        element: <h1>Unidad 2</h1>
+      }
+    ]
   },
   {
     path: '/Unidad3',
